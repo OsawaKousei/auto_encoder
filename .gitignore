@@ -14,3 +14,9 @@ wheels/
 
 # settings
 .vscode/
+
+# data
+data/
+
+# models
+*.pth
