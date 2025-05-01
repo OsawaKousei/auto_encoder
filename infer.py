@@ -69,6 +69,7 @@ def reconstruct_images() -> None:
         plt.axis('off')
 
         # 再構成された画像
+        ax = plt.subplot(2, n, i + 1 + n)  # 2行目のサブプロットを指定
         plt.imshow(reconstructed[i].cpu().squeeze().numpy(), cmap='gray')
         plt.title("Reconstructed")
         plt.axis('off')
